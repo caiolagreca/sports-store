@@ -1,0 +1,354 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*CSS do cabeçalho*/
+
+.cabecalho{
+	display: flex;
+	justify-content: space-between;
+	margin: 2rem;
+}
+
+.nav-esquerda a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #267099;
+	margin: 0 2vw 0 0;
+}
+
+.nav-esquerda a:hover{
+	text-decoration: underline;
+}
+
+.titulo-cabecalho img{
+	width: 2.5vw;
+	position: absolute;
+	left: 50%;
+}
+
+.nav-direita a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #267099;
+	margin: 0 0 0 2vw;
+	font-size: 1.5vw;
+}
+
+.nav-direita i:hover{
+	transform: scale(1.5);
+	transition: 0.5s;
+}
+/*CSS do main*/
+
+.imagem-principal{
+	background-image: url(../img/corrida2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	margin-left: 2%;
+	margin-right: 2%;
+	height: 87vh;
+}
+
+.secao-1{
+	padding: 6rem 25rem 0 20rem ;
+}
+
+.secao-1 h2{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	margin: 0 0 1rem 0;
+	font-size: 100%;
+}
+
+.secao-1 h3{
+	font-family: 'Dela Gothic One', cursive;
+	font-size: 350%;
+	margin: 0 0 1rem 0;
+}
+
+.secao-1 p{
+	font-size: 75%;
+	color: #424242;
+	margin: 0 5rem 2rem 0;
+}
+
+.secao-1 input{
+	padding: 12px 35px;
+	font-size: 75%;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #315b72;
+	color: white;
+	border-radius: 5px;
+	border: 1px solid #315b72;
+	outline: 0;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.secao-1 input:hover{
+	background-color: #b8cbda;
+	color: #315b72;
+	border: 1px solid #b8cbda;
+	transform: scale(1.2);
+}
+
+.mais-buscados{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5rem 0 2rem 0;
+}
+
+.mais-buscados__titulo{
+	font-family: 'Dela Gothic One', cursive;
+	font-size: 170%;
+	margin: 0 0 1rem 0;
+}
+
+.mais-buscados__subtitulo{
+	font-size: 75%;
+	color: #424242;
+}
+
+.esportes{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 2rem 5rem;
+}
+
+.imagem__esporte{
+	width: 10vw;
+	height: 10vw;
+	margin: 2rem 0 0 0;
+	border-radius: 50%;
+}
+
+.esportes h5{
+	color: #315b72;
+	font-weight: bold;
+	font-size: 100%;
+	text-align: center;
+	margin: 1rem ;
+}
+
+.imagem__esporte:hover,
+.esportes h5{
+	cursor: pointer;
+}
+
+.generos{
+	display: flex;
+	justify-content: space-between;
+	margin: 2rem;
+}
+
+.colecao{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: top;
+	width: 27vw;
+	padding: 3rem 1rem 4rem 2rem;
+	border-radius: 10px;
+}
+
+.colecao-masculina{
+	background-color: #5A8F93;
+}
+
+.colecao-feminina{
+	background-color: #a89083;
+}
+
+.colecao-kids{
+	background-color: #64C166;
+}
+
+.colecao h2{
+	margin: 0 10rem 1rem 0;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.colecao h4{
+	margin: 0 5rem 1.5rem 0;
+	font-family: 'Dela Gothic One', cursive;
+	font-size: 110%;
+	color: black;
+}
+
+.colecao h5{
+	color: white;
+	font-weight: 600;
+}
+
+.colecao:hover,
+.mais-buscado:hover{
+	transform: scale(1.05);
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+/*CSS do rodapé*/
+
+.rodape{
+	display: flex;
+	justify-content: space-between;
+	background-color: #5f6b6d;
+	padding: 2rem;
+	background: linear-gradient(white, #5f6b6d);
+}
+
+.rodape__endereco h5{
+	font-weight: bold;
+	font-size: 1.5vw;
+	margin: 0 0 1rem 0;
+}
+
+.rodape__endereco p{
+	line-height: 1.5;
+}
+
+.rodape__central{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.rodape__central__logo{
+	font-weight: bold;
+	font-size: 17px;
+	color: #000;
+	margin: 0 0 0 0;
+}
+
+.rodape__central__copyright{
+	font-weight: 400;
+	font-size: 15px;
+	color: black;
+}
+
+.rodape__contato{
+	display: flex;
+	text-align: left;
+	align-items: center;
+}
+
+.rodape__contato__legenda {
+	font-weight: bold;
+	font-size: 17px;
+	color: #000;
+	margin-bottom: .5rem;
+	display: block;
+}
+
+.rodape__contato__email{
+	padding: 5px;
+}
+
+.rodape__contato__fieldset{
+	display: flex;
+	align-items: center;
+}
+
+#email-contato{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.rodape__contato__submit{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #5a9bc1;
+	color: #FFF;
+	cursor: pointer;
+	padding: 5px;
+}
+
+.rodape__contato #email-contato,
+.rodape__contato__submit{
+	outline: 0;
+	border: 1px solid #5a9bc1;
+	box-sizing: border-box;
+	font-size: 20px;
+}
+
+
+/*CSS para design responsivo.
+OBS:  Não terminei o design responsivo ainda,
+sendo assim não irei aplicar por enquanto.
+
+@media screen and (max-width: 850px){
+
+	.cabecalho{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: space-between;
+		margin-right: 7%;
+		margin-left: 7%;
+		margin-bottom: 2%;
+	}
+
+	.nav-esquerda{
+		padding-top: 12%;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.nav-esquerda a{
+		margin: 0;
+	}
+
+	.nav-direita{
+		padding-bottom: 8%;
+		width: 100%;
+		display: flex;
+		justify-content: end;
+	}
+
+	.nav-direita a{
+		font-size: 80%;
+		margin-left: 5%;
+	}
+
+	.imagem-cabecalho{
+		transform: scale(4);
+	}
+
+	.imagem-principal{
+		margin-right: 7%;
+		margin-left: 7%;
+		margin-top: 3%;
+		margin-bottom: 5%;
+		width: 86%;
+		
+	}
+
+	.rodape__endereco{
+		width: 33%;
+		font-size: 70%;
+	}
+
+	.rodape__central__logo{
+		width: 100%;
+		font-size: 30%;
+	}
+
+	.rodape__central__copyright{
+		width: 100%;
+		font-size: 30%;
+	}
+
+	.rodape__contato{
+		width: 100%;
+		transform: scale(0.8);
+	}
+}
